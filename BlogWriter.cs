@@ -1,18 +1,18 @@
 using System;
 
-public abstract class BlogWriter : Writer
+public class BlogWriter : Writer
 {
     public BlogWriter(string firstName, string lastName) : base(firstName, lastName)
     {
     }
     public override void Write()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("I blog with my pen");
     }
 
     public override void Vlog()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("I Vlog with my go pro");
     }
 
 }

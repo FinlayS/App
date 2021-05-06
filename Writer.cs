@@ -5,11 +5,11 @@ public abstract class Writer : IVlogger
     private string _firstName;
     private string _lastName;
 
-    public string FullName
+    public string AuthorBio
     {
         get
         {
-            return string.Format("{0} {1}", this._firstName, this._lastName);
+            return string.Format("My name is {0} {1}", this._firstName, this._lastName);
         }
 
     }

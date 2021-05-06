@@ -1,20 +1,27 @@
+using System;
+
 public class XSClubPromoter : Promoter, IBodyBuilder, IVlogger
 {
-    public XSClubPromoter(string firstName, string lastName, string phone) : base(firstName, lastName, phone)
+    public XSClubPromoter(string firstName, string lastName, long cellPhone) : base(firstName, lastName, cellPhone)
     {
     }
-    public override void Promote()
+    protected override void ShareWithInnerCircle()
     {
+        Console.WriteLine("I share with my FB dudes");
+    }
 
+    protected override void UsePaidAds()
+    {
+        Console.WriteLine("I buy my own ads");
     }
 
     public void Vlog()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I Vlog XS Club");
     }
 
     public void Workout()
     {
-        throw new System.NotImplementedException();
+        Console.WriteLine("I workout");
     }
 }
